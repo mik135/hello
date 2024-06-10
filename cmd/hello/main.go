@@ -1,9 +1,11 @@
 package main
 
 import (
-	"github.com/bitfield/hello"
+	"github.com/mik135/hello"
+	"os"
 )
 
 func main() {
-	hello.Print()
+	hello.PrintTo(os.Stdout)
+	hello.GreetUser(os.Stdin, os.Stdout)
 }
